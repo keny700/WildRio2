@@ -1,0 +1,29 @@
+{% extends 'home.html.twig' %}
+
+{% block body %}
+
+<div class="container_fluid">
+  <div class="col-md-12 retour"> <a href="{{ path('home') }}">Retour </a>   
+  </div>
+  <div class="col-md-12 top1">
+  </div> 
+  <div class="col-md-12 txtx">{# Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla #}{{ epreufe.texte }} 
+  </div>
+  <div class="col-md-12 tab">
+    {# {{ epreufe.athletes }} #}
+    {% for athletes in athletes %}
+        {{ athletes.nom }}<br />
+    {% endfor %}
+  </div>
+  <div class="col-md-12 vote">
+  </div>
+  <div class="col-md-12 footer">
+    <div class="col-md-3 vide"></div>
+    <div class="col-md-1 logo"><img  src="{{ asset ('img/fb.png') }}" /></div>
+    <div class="col-md-1 logo"><img  src="{{ asset ('img/g.png') }}" /></div>
+    <div class="col-md-1 logo"><img  src="{{ asset ('img/t.png') }}" /></div>
+    <div class="col-md-3 vide"></div>
+  </div>
+
+  
+{% endblock %}
